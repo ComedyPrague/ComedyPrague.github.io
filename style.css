@@ -1,0 +1,19 @@
+
+.logo {
+  margin-bottom: 1em;
+}
+
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin:0 auto;
+}
+
+.facebook-link {
+  margin-top: 1.5em;
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}

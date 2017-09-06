@@ -4,6 +4,14 @@
   border-bottom: 1px solid silver !important;
 }
 
+h2 {
+  margin-bottom: 1em;
+}
+
+dt {
+  margin-top: 1em;
+}
+
 .logo {
   margin-bottom: 1em;
 }

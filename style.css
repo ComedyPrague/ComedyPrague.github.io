@@ -30,3 +30,56 @@ dt {
   font-size: 1.2em;
   font-weight: bold;
 }
+
+#comedians-col {
+  background: #EEE;
+  height: 100%;
+  border: 1px solid gray;
+  margin: 0;
+	padding: 0;
+}
+
+#comedians-nav {
+	margin: 0;
+	padding: 0;
+}
+
+#comedians-nav .header {
+  background: grey;
+  color: #EEE;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin: 0;
+}
+
+#comedians-nav li {
+	display: block;
+	padding: 0.2em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+	margin: 0;
+}
+
+#comedians-nav li.active {
+  background: #DDD;
+}
+
+#comedians-nav li.active a {
+  font-weight: bold;
+}
+
+#comedians-nav li:hover {
+  background: white;
+}
+
+#comedians-profile {
+  background: white;
+  margin-left: 5em;
+}
+
+.comedians-thumb {
+  margin: 0;
+  padding: 0.2em;
+  border: 1px;
+}

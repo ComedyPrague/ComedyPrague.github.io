@@ -12,6 +12,28 @@ dt {
   margin-top: 1em;
 }
 
+a {
+  color: #BE2625;
+}
+
+a:visited {
+  color: #BE2625;
+}
+
+.facebook_event_link {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.facebook_events_link a {
+  color: #3b5998;
+}
+
+.facebook_events_link a:visited {
+  color: #3b5998;
+}
+
+
 .logo {
   margin-bottom: 1em;
 }
@@ -82,4 +104,14 @@ dt {
   margin: 0;
   padding: 0.2em;
   border: 1px;
+}
+
+.venues hr {
+  border: 0.5px solid #EEE;
+  width: 90%;
+  margin: 1.5em;
+}
+
+.venue > .name {
+  margin-top: 1em;
 }

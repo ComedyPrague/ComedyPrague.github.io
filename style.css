@@ -112,6 +112,11 @@ a:visited {
   margin: 1.5em;
 }
 
+#venues-intro {
+  font-style: italic;
+  line-height: 1.8em;
+}
+
 .venue > .name {
   margin-top: 1em;
 }

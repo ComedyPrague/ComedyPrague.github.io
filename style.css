@@ -70,9 +70,28 @@ a:visited {
 }
 
 .comedians-thumb {
-  margin: 0;
-  padding: 0.2em;
-  border: 1px;
+  margin: 0.5em;
+  padding: 1em;
+
+  border: 1px silver solid;
+  background-color: #F0F0F0;
+
+  text-align: center;
+}
+
+.comedians-thumb:hover {
+  background-color: white;
+}
+
+.comedians-thumb img {
+  border: 1px silver solid;
+}
+
+.comedians-thumb h2 {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  padding: 0;
+  font-size: 1.2em;
 }
 
 .venues hr {

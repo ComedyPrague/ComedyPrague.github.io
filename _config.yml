@@ -13,9 +13,9 @@ url: "http://comedyprague.cz" # the base hostname & protocol for your site, e.g.
 
 comedians:
   - { id: luke-ryan, name: Luke ryan }
-  - { id: daniel-grice, name: Daniel Grice }
-  - { id: jeffrey-mons, name: Jeffrey Mons }
   - { id: scott-lee-hansen, name: Scott Lee Hansen }
+  - { id: jeffrey-mons, name: Jeffrey Mons }
+  - { id: daniel-grice, name: Daniel Grice }
   - { id: kiro-nushev, name: Kiro Nushev }
   - { id: lukas-stejskal, name: Lukáš Stejskal }
 

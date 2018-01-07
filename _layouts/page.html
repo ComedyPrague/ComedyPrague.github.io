@@ -2,8 +2,12 @@
 layout: default
 ---
 
-{% if page.title %}
-  <h2>{{page.title}}</h2>
-{% endif %}
+<div class="col-6">
 
-{{ content }}
+  {% if page.title %}
+    <h2>{{page.title}}</h2>
+  {% endif %}
+
+  {{ content }}
+
+</div>

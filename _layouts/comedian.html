@@ -2,4 +2,47 @@
 layout: default
 ---
 
-{{ content }}
+  <div id="comedians-profile" class="col-6">
+
+    <div class="photo">
+      <img src="img/comedians/{{ page.comedian.id }}.jpg" style="object-position: {{ page.comedian.img-align }};"/>
+    </div>
+
+    <div class="name">
+      {% if page.comedian.website %}
+        <h2><a href="{{ page.comedian.website }}">{{ page.comedian.name }}</a></h2>
+      {% else %}
+        <h2>{{ page.comedian.name }}</h2>
+      {% endif %}
+    </div>
+
+    <div><hr /></div>
+
+    <div class="bio">
+      {{ content }}
+    </div>
+
+    <div><hr /></div>
+
+  </div>
+
+  <div class="col">&nbsp;</div>
+</div>
+
+<div class="row" id="comedians-links">
+  <div class="col">&nbsp;</div>
+
+  <div class="col-2" style="text-align: left;">
+    <a href="comedians-daniel-grice.html">&lt;&lt;</a>
+  </div>
+
+  <div class="col-2" style="text-align: center;">
+    <a href="comedians.html#luke-ryan">Comedians</a>
+  </div>
+
+  <div class="col-2" style="text-align: right;">
+    <a href="comedians-bryan-flanagan.html">&gt;&gt;</a>
+  </div>
+
+  <div class="col">&nbsp;</div>
+</div>

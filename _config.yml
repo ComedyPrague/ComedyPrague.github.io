@@ -11,6 +11,14 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://comedyprague.cz" # the base hostname & protocol for your site, e.g. http://example.com
 
+comedians:
+  - { id: luke-ryan, name: Luke ryan }
+  - { id: daniel-grice, name: Daniel Grice }
+  - { id: jeffrey-mons, name: Jeffrey Mons }
+  - { id: scott-lee-hansen, name: Scott Lee Hansen }
+  - { id: kiro-nushev, name: Kiro Nushev }
+  - { id: lukas-stejskal, name: Lukáš Stejskal }
+
 # Build settings
 markdown: kramdown
 

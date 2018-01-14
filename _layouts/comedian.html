@@ -29,19 +29,31 @@ layout: default
   <div class="col">&nbsp;</div>
 </div>
 
+{% for c in site.comedians %}
+  {% if page.comedian.id == c.id %}
+    {% assign previous_index = forloop.index0 | minus: 1 %}
+    {% assign next_index = forloop.index0 | plus: 1 %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
 <div class="row" id="comedians-links">
   <div class="col">&nbsp;</div>
 
   <div class="col-2" style="text-align: left;">
-    <a href="comedians-daniel-grice.html">&lt;&lt;</a>
+    <a href="{{ site.comedians[previous_index].id }}.html"
+    {% if previous_index < 0 %} style="display: none;" {% endif %}
+    >&lt;&lt;</a>
   </div>
 
   <div class="col-2" style="text-align: center;">
-    <a href="comedians.html#luke-ryan">Comedians</a>
+    <a href="comedians.html#{{ page.comedian.id }}">Comedians</a>
   </div>
 
   <div class="col-2" style="text-align: right;">
-    <a href="comedians-bryan-flanagan.html">&gt;&gt;</a>
+    <a href="{{ site.comedians[next_index].id }}.html"
+    {% if next_index >= site.comedians.size %} style="display: none;" {% endif %}
+    >&gt;&gt;</a>
   </div>
 
   <div class="col">&nbsp;</div>

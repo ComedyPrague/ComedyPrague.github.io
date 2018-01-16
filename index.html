@@ -3,6 +3,14 @@ layout: page
 id: home
 permalink: /index.html
 ---
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_UK/sdk.js#xfbml=1&version=v2.11';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <div class="logo">
   <img src="img/comedy_prague_logo.jpg" class="img-responsive" alt="Comedy Prague Logo" />
@@ -17,10 +25,9 @@ permalink: /index.html
     <li>we run workshops to train new comedians</li>
   </ul>
 
-  <p class="facebook-link">
-    <a href="https://www.facebook.com/comedyprague/">
-      <img src="img/facebook_icon_large.png" width="34" height="34" alt="Facebook Logo" />
-      &nbsp;Check us out on Facebook!
-    </a>
-  </p>
+  <div class="fb-page" data-href="https://www.facebook.com/pg/comedyprague/" data-small-header="true"
+       data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true">
+    <blockquote cite="https://www.facebook.com/pg/comedyprague/" class="fb-xfbml-parse-ignore">
+      <a href="https://www.facebook.com/pg/comedyprague/">Comedy Prague</a></blockquote>
+  </div>
 </div>

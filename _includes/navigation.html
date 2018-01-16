@@ -1,3 +1,12 @@
+<!--enable Facebook widget-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_UK/sdk.js#xfbml=1&version=v2.11';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <nav class="navbar navbar-expand-md navbar-light bg-white mb-4">
   <a class="navbar-brand" href="/"><img src="/img/comedy_prague_logo_small.jpg" class="img-responsive" alt="Comedy Prague Logo" /></a>
@@ -20,6 +29,10 @@
       <li class="nav-item {% if page.id == 'venues' %} active {% endif %}">
         <a class="nav-link" href="/venues.html">Venues</a>
       </li>
+      </li>
+      <li class="nav-item {% if page.id == 'events' %} active {% endif %}">
+        <a class="nav-link" href="/events.html">Events</a>
+      </li>
       <li class="nav-item {% if page.id == 'contact-us' %} active {% endif %}">
         <a class="nav-link" href="/contact-us.html">Contact Us</a>
       </li>
@@ -27,9 +40,11 @@
 
     <ul class="navbar-nav navbar-right">
       <li class="nav-item">
-        <a href="https://www.facebook.com/comedyprague/">
-          <img src="/img/facebook_icon_large.png" width="34" height="34" alt="Facebook Logo" />
-        </a>
+        <div class="fb-page" data-href="https://www.facebook.com/pg/comedyprague/" data-small-header="true"
+             data-adapt-container-width="false" data-width="250" data-hide-cover="true" data-show-facepile="false">
+          <blockquote cite="https://www.facebook.com/pg/comedyprague/" class="fb-xfbml-parse-ignore">
+            <a href="https://www.facebook.com/pg/comedyprague/">Comedy Prague</a></blockquote>
+        </div>
       </li>
     </ul>
 

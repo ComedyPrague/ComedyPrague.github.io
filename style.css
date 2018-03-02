@@ -111,6 +111,10 @@ a:visited {
   line-height: 1.8em;
 }
 
+#venues-intro > .item {
+  font-size: larger;
+}
+
 .venue > .name {
   margin-top: 1em;
 }

@@ -1,47 +1,8 @@
 ---
-layout: page
+layout: comedians
 id: comedians
-title: Comedians
-permalink: /comedians.html
+permalink: /comedians
+page_nr: 1
+next_page: true
+previous_page: false
 ---
-
-</div>
-
-<div class="col">&nbsp;</div>
-</div>
-
-<div class="row">
-<div class="col">&nbsp;</div>
-
-{% for comedian in site.comedians %}
-
-  {% assign index_modulo = forloop.index0|modulo:3 %}
-
-  {% if forloop.index0 > 0 and index_modulo == 0 %}
-      <div class="col">&nbsp;</div>
-    </div>
-
-    <div class="row">
-      <div class="col">&nbsp;</div>
-  {% endif %}
-
-  <div class="col-2 comedians-thumb">
-    <div class="photo">
-      <a href="/comedians/{{ comedian.id }}.html">
-        <img src="/img/comedians/{{ comedian.id }}-thumb.jpg" />
-      </a>
-    </div>
-    <div class="name">
-      <h2><a href="/comedians/{{ comedian.id }}.html">{{ comedian.name }}</a></h2>
-    </div>
-  </div>
-
-{% endfor %}
-
-<div class="col">&nbsp;</div>
-</div>
-
-<div class="row">
-  <div class="col-12 text-center" style="margin-top: 2em; color: gray;">
-    <i>More profiles coming soon...<i>
-  </div>

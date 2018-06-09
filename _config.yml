@@ -22,6 +22,7 @@ comedians:
   - { id: kiro-nushev, name: Kiro Nushev }
   - { id: lukas-stejskal, name: Lukáš Stejskal }
   - { id: spela-kopac, name: Špela Kopač }
+  - { id: alex, name: Alex }
   - { id: david-cox, name: David Cox }
   - { id: jeffrey-mons, name: Jeffrey Mons }
   - { id: jeff-baugh, name: Jeff Baugh }

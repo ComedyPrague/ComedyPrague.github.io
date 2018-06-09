@@ -19,10 +19,8 @@ comedians:
   - { id: david-cox, name: David Cox }
   - { id: katarina-puskarov, name: Katarina Puskarov }
   - { id: kiro-nushev, name: Kiro Nushev }
-  - { id: daniel-grice, name: Daniel Grice }
   - { id: lukas-stejskal, name: Lukáš Stejskal }
   - { id: jeff-baugh, name: Jeff Baugh }
-  - { id: david-talacko, name: David Talacko }
   - { id: tomasz-kepa, name: Tomasz Kepa }
 
 # Build settings

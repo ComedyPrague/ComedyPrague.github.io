@@ -41,17 +41,17 @@ layout: default
   <div class="col">&nbsp;</div>
 
   <div class="col-2" style="text-align: left;">
-    <a href="{{ site.comedians[previous_index].id }}.html"
+    <a href="/comedians/{{ site.comedians[previous_index].id }}.html"
     {% if previous_index < 0 %} style="display: none;" {% endif %}
     >&lt;&lt;</a>
   </div>
 
   <div class="col-2" style="text-align: center;">
-    <a href="comedians.html#{{ page.comedian.id }}">Comedians</a>
+    <a href="/comedians/1">Comedians</a>
   </div>
 
   <div class="col-2" style="text-align: right;">
-    <a href="{{ site.comedians[next_index].id }}.html"
+    <a href="/comedians/{{ site.comedians[next_index].id }}.html"
     {% if next_index >= site.comedians.size %} style="display: none;" {% endif %}
     >&gt;&gt;</a>
   </div>

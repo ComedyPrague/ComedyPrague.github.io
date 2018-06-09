@@ -21,6 +21,7 @@ comedians:
   - { id: david-thompson, name: David Thompson }
   - { id: kiro-nushev, name: Kiro Nushev }
   - { id: lukas-stejskal, name: Lukáš Stejskal }
+  - { id: spela-kopac, name: Špela Kopač }
   - { id: jeffrey-mons, name: Jeffrey Mons }
   - { id: jeff-baugh, name: Jeff Baugh }
   - { id: tomasz-kepa, name: Tomasz Kepa }

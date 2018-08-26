@@ -1,5 +1,5 @@
 # ComedyPrague
-Comedy Prague website TEST
+Comedy Prague website
 
 ## Installation
 

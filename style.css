@@ -1,5 +1,4 @@
 
-
 .navbar {
   border-bottom: 1px solid silver !important;
 }
@@ -66,7 +65,7 @@ a:visited {
 }
 
 #comedians-profile .bio {
-  text-align: justify;
+  text-align: left;
   background: white;
 }
 
@@ -106,6 +105,10 @@ a:visited {
   margin-bottom: 1em;
 }
 
+#comedians-links > div {
+  text-align: center;
+}
+
 #venues-intro {
   font-style: italic;
   line-height: 1.8em;
@@ -117,4 +120,27 @@ a:visited {
 
 .venue > .name {
   margin-top: 1em;
+}
+
+.venue .location {
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  ul {
+    padding-left: 1.2em;
+  }
+
+  li.list-inline-item {
+    margin-bottom: 1em;
+  }
+
+  li.list-inline-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .venue .location {
+    text-align: left;
+    padding-bottom: 0.5em;
+  }
 }

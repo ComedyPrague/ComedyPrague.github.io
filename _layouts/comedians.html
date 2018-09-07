@@ -11,8 +11,8 @@ page_nr: 1
 <div class="col">&nbsp;</div>
 </div>
 
-<div class="row">
-<div class="col">&nbsp;</div>
+<div class="row justify-content-center">
+<div class="col d-none d-md-block">&nbsp;</div>
 
 {% assign comedians_page = page.page_nr | minus:1 %}
 {% assign comedians_limit = 9 %}
@@ -23,17 +23,17 @@ page_nr: 1
   {% assign index_modulo = forloop.index0|modulo:3 %}
 
   {% if forloop.index0 > 0 and index_modulo == 0 %}
-      <div class="col">&nbsp;</div>
+      <div class="col d-none d-md-block">&nbsp;</div>
     </div>
 
-    <div class="row">
-      <div class="col">&nbsp;</div>
+    <div class="row justify-content-center">
+      <div class="col d-none d-md-block">&nbsp;</div>
   {% endif %}
 
-  <div class="col-2 comedians-thumb">
+  <div class="col-md-2 comedians-thumb" style="max-width: 220px;">
     <div class="photo">
       <a href="/comedians/{{ comedian.id }}.html">
-        <img src="/img/comedians/{{ comedian.id }}-thumb.jpg" />
+        <img src="/img/comedians/{{ comedian.id }}-thumb.jpg" style="max-width: 150px;" />
       </a>
     </div>
     <div class="name">
@@ -43,14 +43,14 @@ page_nr: 1
 
 {% endfor %}
 
-<div class="col">&nbsp;</div>
+<div class="col d-none d-md-block">&nbsp;</div>
 </div>
 
 
 <div class="row">
-  <div class="col-3">&nbsp;</div>
-  <div class="col-6"><hr /></div>
-  <div class="col-3">&nbsp;</div>
+  <div class="col-md-3">&nbsp;</div>
+  <div class="col-md-6"><hr /></div>
+  <div class="col-md-3">&nbsp;</div>
 </div>
 
 {% assign total_pages_nr = site.comedians.size | divided_by:comedians_limit %}
@@ -58,19 +58,19 @@ page_nr: 1
 {% assign current_page_nr = page.page_nr | times: 1 %}
 
 <div class="row" id="comedians-links" style="text-align: center;">
-  <div class="col-3">&nbsp;</div>
+  <div class="col-md-3">&nbsp;</div>
 
-  <div class="col-3" style="text-align: center;">
+  <div class="col-md-3" style="text-align: center;">
     <a href="/comedians/{{ page.page_nr | minus:1 }}.html"
     {% if current_page_nr <= 1 %} style="display: none;" {% endif %}
     >&lt;&lt;&nbsp;previous&nbsp;page</a>
   </div>
 
-  <div class="col-3" style="text-align: center;">
+  <div class="col-md-3" style="text-align: center;">
     <a href="/comedians/{{ page.page_nr | plus:1 }}.html"
     {% if current_page_nr >= total_pages_nr %} style="display: none;" {% endif %}
     >next&nbsp;page&nbsp;&gt;&gt;</a>&nbsp;
   </div>
 
-  <div class="col-3">&nbsp;</div>
+  <div class="col-md-3">&nbsp;</div>
 </div>

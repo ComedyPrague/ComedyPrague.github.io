@@ -2,7 +2,7 @@
 layout: default
 ---
 
-  <div id="comedians-profile" class="col-6">
+  <div id="comedians-profile" class="col-md-6">
 
     <div class="photo">
       <img src="/img/comedians/{{ page.comedian.id }}.jpg" style="object-position: {{ page.comedian.img-align }};"/>
@@ -37,24 +37,24 @@ layout: default
   {% endif %}
 {% endfor %}
 
-<div class="row" id="comedians-links">
-  <div class="col">&nbsp;</div>
+<div class="row justify-content-center" id="comedians-links">
+  <div class="col d-none d-md-block">&nbsp;</div>
 
-  <div class="col-2" style="text-align: left;">
+  <div class="col-2 col-md-1">
     <a href="/comedians/{{ site.comedians[previous_index].id }}.html"
     {% if previous_index < 0 %} style="display: none;" {% endif %}
     >&lt;&lt;</a>
   </div>
 
-  <div class="col-2" style="text-align: center;">
+  <div class="col-4">
     <a href="/comedians/1">Comedians</a>
   </div>
 
-  <div class="col-2" style="text-align: right;">
+  <div class="col-2 col-md-1">
     <a href="/comedians/{{ site.comedians[next_index].id }}.html"
     {% if next_index >= site.comedians.size %} style="display: none;" {% endif %}
     >&gt;&gt;</a>
   </div>
 
-  <div class="col">&nbsp;</div>
+  <div class="col d-none d-md-block">&nbsp;</div>
 </div>

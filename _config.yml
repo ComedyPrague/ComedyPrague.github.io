@@ -28,6 +28,7 @@ comedians:
   - { id: jeff-baugh, name: Jeff Baugh }
   - { id: tomasz-kepa, name: Tomasz Kepa }
   - { id: russell-adam-webb, name: Russell Adam Webb }
+  - { id: carmine-rodi-falanga, name: Carmine Rodi Falanga }
 
 # Build settings
 markdown: kramdown

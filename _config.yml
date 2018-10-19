@@ -29,6 +29,7 @@ comedians:
   - { id: tomasz-kepa, name: Tomasz Kepa }
   - { id: russell-adam-webb, name: Russell Adam Webb }
   - { id: carmine-rodi-falanga, name: Carmine Rodi Falanga }
+  - { id: sean-riordain, name: Sean Ríordáin }
 
 # Build settings
 markdown: kramdown

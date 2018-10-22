@@ -23,10 +23,10 @@ comedians:
   - { id: lukas-stejskal, name: Lukáš Stejskal }
   - { id: bryan-flanagan, name: Bryan Flanagan }
   - { id: carmine-rodi-falanga, name: Carmine Rodi Falanga }
-  - { id: jeffrey-mons, name: Jeffrey Mons }
-  - { id: david-cox, name: David Cox }
-  - { id: alex, name: Alex }
   - { id: willard-toydog, name: Willard }
+  - { id: jeffrey-mons, name: Jeffrey Mons }
+  - { id: alex, name: Alex }
+  - { id: david-cox, name: David Cox }
   - { id: russell-adam-webb, name: Russell Adam Webb }
   - { id: jeff-baugh, name: Jeff Baugh }
   - { id: tomasz-kepa, name: Tomasz Kepa }

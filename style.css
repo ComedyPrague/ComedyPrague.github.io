@@ -126,6 +126,16 @@ a:visited {
   text-align: right;
 }
 
+#shows {
+  font-style: italic;
+  line-height: 1.8em;
+}
+
+#shows > .item {
+  margin-top: 0.5em; 
+  font-size: larger;
+}
+
 @media (max-width: 767px) {
   ul {
     padding-left: 1.2em;

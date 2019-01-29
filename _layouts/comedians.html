@@ -53,8 +53,8 @@ page_nr: 1
   <div class="col-md-3">&nbsp;</div>
 </div>
 
-{% assign total_pages_nr = site.comedians.size | divided_by:comedians_limit %}
-{% assign total_pages_nr = total_pages_nr | plus:1 %}
+{% assign comedians_limit_float = comedians_limit | times: 1.0 %}
+{% assign total_pages_nr = site.comedians.size | divided_by: comedians_limit_float %}
 {% assign current_page_nr = page.page_nr | times: 1 %}
 
 <div class="row" id="comedians-links" style="text-align: center;">

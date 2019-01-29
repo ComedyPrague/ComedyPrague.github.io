@@ -12,7 +12,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://comedyprague.cz" # the base hostname & protocol for your site, e.g. http://example.com
 
 comedians:
-  - { id: luke-ryan, name: Luke ryan }
+  - { id: luke-ryan, name: Luke Ryan }
   - { id: scott-lee-hansen, name: Scott Lee Hansen }
   - { id: kiro-nushev, name: Kiro Nushev }
   - { id: lucie-machackova, name: Lucie Macháčková }

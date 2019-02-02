@@ -126,13 +126,13 @@ a:visited {
   text-align: right;
 }
 
-#shows {
+.shows {
   font-style: italic;
   line-height: 1.8em;
 }
 
-#shows > .item {
-  margin-top: 0.5em; 
+.shows > .item {
+  margin-top: 0.5em;
   font-size: larger;
 }
 

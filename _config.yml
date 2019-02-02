@@ -29,7 +29,6 @@ comedians:
   - { id: david-cox, name: David Cox }
   - { id: russell-adam-webb, name: Russell Adam Webb }
   - { id: jeff-baugh, name: Jeff Baugh }
-  - { id: tomasz-kepa, name: Tomasz Kepa }
 
 # Build settings
 markdown: kramdown

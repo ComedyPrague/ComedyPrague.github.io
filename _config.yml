@@ -23,12 +23,13 @@ comedians:
   - { id: lukas-stejskal, name: Lukáš Stejskal }
   - { id: bryan-flanagan, name: Bryan Flanagan }
   - { id: carmine-rodi-falanga, name: Carmine Rodi Falanga }
-  - { id: willard-toydog, name: Willard }
+  - { id: simon-storey, name: Simon Storey }
   - { id: jeffrey-mons, name: Jeffrey Mons }
   - { id: alex, name: Alex }
   - { id: david-cox, name: David Cox }
   - { id: russell-adam-webb, name: Russell Adam Webb }
   - { id: jeff-baugh, name: Jeff Baugh }
+  - { id: willard-toydog, name: Willard }
 
 # Build settings
 markdown: kramdown

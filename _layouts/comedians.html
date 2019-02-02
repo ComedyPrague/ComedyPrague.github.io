@@ -11,24 +11,13 @@ page_nr: 1
 <div class="col">&nbsp;</div>
 </div>
 
-<div class="row justify-content-center">
-<div class="col d-none d-md-block">&nbsp;</div>
+<div class="row justify-content-center" style="margin-left: auto; margin-right: auto; max-width: 700px;">
 
 {% assign comedians_page = page.page_nr | minus:1 %}
 {% assign comedians_limit = 9 %}
 {% assign comedians_offset = comedians_page | times:comedians_limit %}
 
 {% for comedian in site.comedians limit:comedians_limit offset:comedians_offset %}
-
-  {% assign index_modulo = forloop.index0|modulo:3 %}
-
-  {% if forloop.index0 > 0 and index_modulo == 0 %}
-      <div class="col d-none d-md-block">&nbsp;</div>
-    </div>
-
-    <div class="row justify-content-center">
-      <div class="col d-none d-md-block">&nbsp;</div>
-  {% endif %}
 
   <div class="col-md-2 comedians-thumb" style="max-width: 220px;">
     <div class="photo">
@@ -43,9 +32,7 @@ page_nr: 1
 
 {% endfor %}
 
-<div class="col d-none d-md-block">&nbsp;</div>
 </div>
-
 
 <div class="row">
   <div class="col-md-3">&nbsp;</div>

@@ -1,41 +1,52 @@
 
 <div class="texat shows">
-  <div class="item">
-    <b>Every 2nd Wednesday:</b>
-    Cosy Comedy open mic in <a href="https://www.facebook.com/NightTime-Bar-1514225552182989">NightTime&nbsp;Bar</a>
-    <br />U Kanálky 11, Prague 2
-  </div>
+
+    {% include show.html
+      when="2nd Wednesday"
+      name="Cosy Comedy Open Mic"
+      location_name="NightTime&nbsp;Bar"
+      location_link="https://www.facebook.com/NightTime-Bar-1514225552182989"
+      location_address="U Kanálky 11, Prague 2"
+    %}
 
   <hr />
 
-  <div class="item">
-    <b>Every 2nd Saturday:</b>
-    Comedy-Oke showcase in <a href="https://www.facebook.com/zizkovsiska/">žižkovšiška</a>
-    <br />Husitská 11, Prague 3
-  </div>
+  {% include show.html
+    when="2nd Saturday"
+    name="Comedy-Oke Showcase"
+    location_name="žižkovšiška"
+    location_link="https://www.facebook.com/zizkovsiska/"
+    location_address="Husitská 11, Prague 3"
+  %}
 
   <hr />
 
-  <div class="item">
-    <b>Every 3rd Wednesday:</b>
-    Open mic in <a href="https://www.facebook.com/tchaiovna/">A&nbsp;Maze in&nbsp;Tchaiovna</a>
-    <br />Muchova 4, Prague 6
-  </div>
+  {% include show.html
+    when="3rd Wednesday"
+    name="Open Mic"
+    location_name="A&nbsp;Maze in&nbsp;Tchaiovna"
+    location_link="https://www.facebook.com/tchaiovna/"
+    location_address="Muchova 4, Prague 6"
+  %}
 
   <hr />
 
-  <div class="item">
-    <b>Every last Wednesday:</b>
-    The Laughter Lounge show in <a href="https://www.facebook.com/california.republic.bar/">California&nbsp;Republic</a>
-    <br />Belgická 24, Prague 2
-  </div>
+  {% include show.html
+    when="last Wednesday"
+    name="The Laughter Lounge Show"
+    location_name="California&nbsp;Republic"
+    location_link="https://www.facebook.com/california.republic.bar/"
+    location_address="Belgická 24, Prague 2"
+  %}
 
   <hr />
 
-  <div class="item">
-    <b>Every last Saturday:</b>
-    Laugh-O-Meter show in <a href="https://www.facebook.com/NightTime-Bar-1514225552182989">NightTime&nbsp;Bar</a>
-    <br />Belgická 24, Prague 2
-  </div>
+  {% include show.html
+    when="last Saturday"
+    name="Laugh-O-Meter Show"
+    location_name="NightTime&nbsp;Bar"
+    location_link="https://www.facebook.com/NightTime-Bar-1514225552182989"
+    location_address="Belgická 24, Prague 2"
+  %}
 
 </div>

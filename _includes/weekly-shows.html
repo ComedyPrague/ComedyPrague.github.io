@@ -1,24 +1,32 @@
 
 <div class="texat shows">
-  <div class="item">
-    <b>Every Friday:</b>
-    Showcase in <a href="https://www.facebook.com/londonundergroundbar/">London&nbsp;Underground&nbsp;Bar</a>
-    <br />Spálená 47, Prague 1
-  </div>
+
+  {% include show.html
+    when="Friday"
+    name="Showcase"
+    location_name="London&nbsp;Underground&nbsp;Bar"
+    location_link="https://www.facebook.com/londonundergroundbar/"
+    location_address="Spálená 47, Prague 1"
+  %}
 
   <hr />
 
-  <div class="item">
-    <b>Every Saturday:</b>
-    Open Mic in <a href="https://www.facebook.com/londonundergroundbar/">London&nbsp;Underground&nbsp;Bar</a>
-    <br />Spálená 47, Prague 1
-  </div>
+  {% include show.html
+    when="Saturday"
+    name="Open Mic"
+    location_name="London&nbsp;Underground&nbsp;Bar"
+    location_link="https://www.facebook.com/londonundergroundbar/"
+    location_address="Spálená 47, Prague 1"
+  %}
 
   <hr />
 
-  <div class="item">
-    <b>Every Sunday:</b>
-    Open Mic in <a href="https://www.facebook.com/TheBar.cz/">Bar&nbsp;Coming&nbsp;Soon</a>
-    <br />Jindřicha Plachty 28, Prague 5
-  </div>
+  {% include show.html
+    when="Sunday"
+    name="Open Mic"
+    location_name="Bar&nbsp;Coming&nbsp;Soon"
+    location_link="https://www.facebook.com/TheBar.cz/"
+    location_address="Jindřicha Plachty 28, Prague 5"
+  %}
+
 </div>

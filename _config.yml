@@ -19,13 +19,13 @@ comedians:
   - { id: tori-burton, name: Tori Burton }
   - { id: katarina-puskarov, name: Katarina Puskarov }
   - { id: david-thompson, name: David Thompson }
-  - { id: phil-micallef, name: Phil Micallef }
-  - { id: lukas-stejskal, name: Lukáš Stejskal }
-  - { id: bryan-flanagan, name: Bryan Flanagan }
   - { id: carmine-rodi-falanga, name: Carmine Rodi Falanga }
+  - { id: lukas-stejskal, name: Lukáš Stejskal }
   - { id: scott-lee-hansen, name: Scott Lee Hansen }
   - { id: spela-kopac, name: Špela Kopač }
+  - { id: bryan-flanagan, name: Bryan Flanagan }
   - { id: jeffrey-mons, name: Jeffrey Mons }
+  - { id: phil-micallef, name: Phil Micallef }
   - { id: alex, name: Alex }
   - { id: russell-adam-webb, name: Russell Adam Webb }
 

@@ -16,6 +16,7 @@ comedians:
   - { id: sean-riordain, name: Sean Ríordáin }
   - { id: kiro-nushev, name: Kiro Nushev }
   - { id: lucie-machackova, name: Lucie Macháčková }
+  - { id: tori-burton, name: Tori Burton }
   - { id: katarina-puskarov, name: Katarina Puskarov }
   - { id: david-thompson, name: David Thompson }
   - { id: phil-micallef, name: Phil Micallef }

@@ -13,23 +13,20 @@ url: "http://comedyprague.cz" # the base hostname & protocol for your site, e.g.
 
 comedians:
   - { id: luke-ryan, name: Luke Ryan }
-  - { id: scott-lee-hansen, name: Scott Lee Hansen }
+  - { id: sean-riordain, name: Sean Ríordáin }
   - { id: kiro-nushev, name: Kiro Nushev }
   - { id: lucie-machackova, name: Lucie Macháčková }
-  - { id: phil-micallef, name: Phil Micallef }
   - { id: katarina-puskarov, name: Katarina Puskarov }
   - { id: david-thompson, name: David Thompson }
-  - { id: sean-riordain, name: Sean Ríordáin }
+  - { id: phil-micallef, name: Phil Micallef }
   - { id: lukas-stejskal, name: Lukáš Stejskal }
   - { id: bryan-flanagan, name: Bryan Flanagan }
   - { id: carmine-rodi-falanga, name: Carmine Rodi Falanga }
+  - { id: scott-lee-hansen, name: Scott Lee Hansen }
   - { id: spela-kopac, name: Špela Kopač }
   - { id: jeffrey-mons, name: Jeffrey Mons }
   - { id: alex, name: Alex }
-  - { id: david-cox, name: David Cox }
   - { id: russell-adam-webb, name: Russell Adam Webb }
-  - { id: willard-toydog, name: Willard }
-  - { id: jeff-baugh, name: Jeff Baugh }
 
 # Build settings
 markdown: kramdown

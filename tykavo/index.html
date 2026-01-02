@@ -39,33 +39,36 @@ permalink: /tykavo/
   <div class="container mx-auto p-6 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
     <!-- Logo and title -->
-    <div class="bg-gray-800 shadow-lg rounded-lg p-4 flex items-center justify-center">
+    <div class="bg-gray-800 shadow-lg rounded-lg p-4 flex items-center justify-center hover:shadow-xl transition-shadow">
       <img src="img/logo.png" class="w-auto h-auto rounded" alt="Ty Kavo open mic - every 1st and 3rd Wednesday of the month!">
     </div>
 
     <!-- Feature Photo -->
-    <div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden">
-      <img src="img/feature-photo.jpg" alt="Feature Photo" class="">
+    <div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow">
+      <img src="img/feature-photo.jpg" alt="Feature Photo at Ty Kavo" class="">
     </div>
 
     <!-- Where -->
-    <div class="bg-gray-800 shadow-lg rounded-lg p-4">
-      <h2 class="font-semibold text-xl mb-2">Where</h2>
-
-      <p class="location">
-        <a target="_blank" href="https://www.google.com/maps/place/J.+Plachty+3163%2F28,+150+00+Praha-Sm%C3%ADchov/@50.0706761,14.4037421,17z/data=!3m1!4b1!4m5!3m4!1s0x470b945791e6f7bd:0xd7b7d78c2647cbd3!8m2!3d50.0706727!4d14.4059361?hl=en">
-          <a href="https://www.tykavo.cz/kavarnatykavo/">Ty Kávo! café & bar</a><br />
-          <a href="">Jindřicha Plachty 28, Prague 5<br />
+    <div class="bg-gray-800 shadow-lg rounded-lg p-4 hover:shadow-xl transition-shadow">
+      <h2 class="font-semibold text-xl mb-4 text-white">Where</h2>
+      <p class="location text-gray-300">
+        <strong class="text-white block mb-2">
+          <a target="_blank" href="https://www.tykavo.cz/kavarnatykavo/" class="hover:text-blue-400 transition-colors">Ty Kávo! café & bar</a>
+        </strong>
+        <span class="text-base">
+          <a target="_blank" href="https://www.google.com/maps/place/J.+Plachty+3163%2F28,+150+00+Praha-Sm%C3%ADchov/@50.0706761,14.4037421,17z/data=!3m1!4b1!4m5!3m4!1s0x470b945791e6f7bd:0xd7b7d78c2647cbd3!8m2!3d50.0706727!4d14.4059361?hl=en" class="hover:text-blue-400 transition-colors">Jindřicha Plachty 28, Prague 5<br />
           5 minutes from metro Anděl</a>
-        </a>
+        </span>
       </p>
     </div>
 
     <!-- When -->
-    <div class="bg-gray-800 shadow-lg rounded-lg p-4">
-      <h2 class="font-semibold text-xl mb-2">When</h2>
-      <i>Every 1st and 3rd Wednesday from 8pm</i>
-      <ul class="list-disc ml-5">
+    <div class="bg-gray-800 shadow-lg rounded-lg p-4 hover:shadow-xl transition-shadow">
+      <h2 class="font-semibold text-xl mb-4 text-white">When</h2>
+      <p class="text-gray-300 text-base font-medium mb-3">
+      Every 1st and 3rd Wednesday from 8pm
+      </p>
+      <ul class="list-disc ml-5 space-y-2 text-base text-gray-300">
         <li>Wed Jan 7 — 8pm (
           <a target="_blank" href="https://www.facebook.com/events/1382223303695671"><img src="../img/facebook-icon.png" alt="Facebook" class="w-4 h-4 inline mr-1"></a>, 
           <a target="_blank" href="https://www.meetup.com/prague-english-comedy-meetup/events/312637393/"><img src="../img/meetup-icon.png" alt="Meetup" class="w-4 h-4 inline mr-1"></a>)
@@ -82,25 +85,26 @@ permalink: /tykavo/
     </div>
 
     <!-- Photo Carousel -->
-    <div class="bg-gray-800 shadow-lg rounded-lg p-4">
-      <h2 class="font-semibold text-xl mb-2">Photos</h2>
-      <div class="relative overflow-hidden rounded">
-      <div class="flex transition-transform duration-500" id="carousel">
-        <img src="img/tykavo3.jpeg" class="w-full flex-shrink-0 rounded" alt="">
-        <img src="img/tykavo4.jpeg" class="w-full flex-shrink-0 rounded" alt="">
-        <img src="img/tykavo2.jpeg" class="w-full flex-shrink-0 rounded" alt="">
-      </div>
-      <button onclick="carousel(-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white p-2 rounded">❮</button>
-      <button onclick="carousel(1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white p-2 rounded">❯</button>
+    <div class="bg-gray-800 shadow-lg rounded-lg p-4 hover:shadow-xl transition-shadow">
+      <h2 class="font-semibold text-xl mb-4 text-white">Photos</h2>
+      <div class="relative overflow-hidden rounded-lg group">
+        <div class="flex transition-transform duration-500" id="carousel">
+          <img src="img/tykavo3.jpeg" class="w-full flex-shrink-0 rounded-lg" alt="Ty Kavo open mic audience">
+          <img src="img/tykavo4.jpeg" class="w-full flex-shrink-0 rounded-lg" alt="Stand-up comedy performance">
+          <img src="img/tykavo2.jpeg" class="w-full flex-shrink-0 rounded-lg" alt="Comedy night at Ty Kavo">
+        </div>
+        <button onclick="carousel(-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white p-2.5 rounded-full transition-all transform hover:scale-110 opacity-0 group-hover:opacity-100">❮</button>
+        <button onclick="carousel(1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white p-2.5 rounded-full transition-all transform hover:scale-110 opacity-0 group-hover:opacity-100">❯</button>
       </div>
     </div>
 
     <!-- About Us -->
-    <div class="bg-gray-800 shadow-lg rounded-lg p-4">
-      <h2 class="font-semibold text-xl mb-2">About Us</h2>
-      <p class="text">
+    <div class="bg-gray-800 shadow-lg rounded-lg p-4 hover:shadow-xl transition-shadow">
+      <h2 class="font-semibold text-xl mb-4 text-white">About Us</h2>
+      <p class="text-gray-300 text-base leading-relaxed">
         Looking for a real local comedy experience in Prague? 
-        Join us at stand-up comedy open mic at Ty Kávo!, 
+        Join us at stand-up comedy open mic at 
+        <a target="_blank" href="https://www.tykavo.cz/kavarnatykavo/" class="hover:text-blue-400 transition-colors"><strong class="text-white">Ty Kávo!</strong></a>, 
         a relaxed Wednesday-night show where comedians 
         come to test new jokes and audiences get an unfiltered, 
         authentic comedy experience.<br/><br/>
@@ -111,39 +115,34 @@ permalink: /tykavo/
     </div>
 
     <!-- Sign up for open spot -->
-    <div class="bg-gray-800 shadow-lg rounded-lg p-4">
-      <h2 class="font-semibold text-xl mb-2">Get a Spot</h2>
-      <p class="text">
-      <i>Feeling brave?</i> Sign up with the MC for 5 minutes on stage.<br /><br />
-
-      It's best to do it in advance via the contact form,
-      but you can just come to the show and sign on the spot.
+    <div class="bg-gray-800 shadow-lg rounded-lg p-4 hover:shadow-xl transition-shadow">
+      <h2 class="font-semibold text-xl mb-4 text-white">Get a Spot</h2>
+      <p class="text-gray-300 text-base leading-relaxed mb-4">
+        <strong class="text-white">Feeling brave?</strong> Sign up with the MC for 5 minutes on stage.
+        <br /><br />
+        It's best to do it in advance via the contact form below,
+        but you can also just come to the show and sign on the spot.
       </p>
     </div>
 
     <!-- Contact Us -->
-    <div class="bg-gray-800 shadow-lg rounded-lg p-4">
-      <h2 class="font-semibold text-xl mb-2">Contact Us</h2>
-
-      <p class="text">
-        <form
-          action="https://formspree.io/f/xrebkakv"
-          method="POST"
-          class="space-y-4"
-        >
-          <label class="block">
-            <span class="text-gray-300 mb-2 block">Your email:</span>
-            <input type="email" name="email" class="w-full bg-gray-700 text-gray-100 border border-gray-600 rounded px-3 py-2 focus:outline-none focus:border-blue-500">
-          </label>
-
-          <label class="block">
-            <span class="text-gray-300 mb-2 block">Your message:</span>
-            <textarea name="message" class="w-full bg-gray-700 text-gray-100 border border-gray-600 rounded px-3 py-2 focus:outline-none focus:border-blue-500 resize-none" rows="4"></textarea>
-          </label>
-
-          <button type="submit" class="w-full bg-blue-900 hover:bg-blue-700 text-gray-100 font-semibold py-2 rounded transition-colors">Send</button>
-        </form>
-      </p>
+    <div class="bg-gray-800 shadow-lg rounded-lg p-4 hover:shadow-xl transition-shadow">
+      <h2 class="font-semibold text-xl mb-4 text-white">Contact Us</h2>
+      <form
+        action="https://formspree.io/f/xrebkakv"
+        method="POST"
+        class="space-y-4"
+      >
+        <label class="block">
+          <span class="text-gray-300 mb-2 block text-base font-medium">Your email:</span>
+          <input type="email" name="email" required class="w-full bg-gray-700 text-gray-100 border border-gray-600 rounded-lg px-3 py-2 text-base focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-500/30 transition-colors" placeholder="your@email.com">
+        </label>
+        <label class="block">
+          <span class="text-gray-300 mb-2 block text-base font-medium">Your message:</span>
+          <textarea name="message" required class="w-full bg-gray-700 text-gray-100 border border-gray-600 rounded-lg px-3 py-2 text-base focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-500/30 resize-none transition-colors" rows="4" placeholder="Yes, I want a spot!"></textarea>
+        </label>
+        <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white font-semibold py-2.5 rounded-lg transition-all transform hover:scale-105 shadow-lg">Send Message</button>
+      </form>
     </div>
 
   </div>
@@ -151,7 +150,7 @@ permalink: /tykavo/
     <script>
       let currentSlide = 0;
       const totalSlides = 3;
-
+      
       function carousel(n) {
         const carousel = document.getElementById('carousel');
         currentSlide += n;

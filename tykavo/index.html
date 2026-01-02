@@ -84,13 +84,14 @@ permalink: /tykavo/
     <!-- Photo Carousel -->
     <div class="bg-gray-800 shadow-lg rounded-lg p-4">
       <h2 class="font-semibold text-xl mb-2">Photos</h2>
-      <div class="grid grid-cols-3 gap-2">
-        <img src="img/tykavo1.jpeg" class="w-full rounded" alt="">
-        <img src="img/tykavo2.jpeg" class="w-full rounded" alt="">
-        <img src="img/tykavo3.jpeg" class="w-full rounded" alt="">
-        <img src="img/tykavo4.jpeg" class="w-full rounded" alt="">
-        <img src="img/tykavo5.jpeg" class="w-full rounded" alt="">
-        <img src="img/tykavo6.jpeg" class="w-full rounded" alt="">
+      <div class="relative overflow-hidden rounded">
+      <div class="flex transition-transform duration-500" id="carousel">
+        <img src="img/tykavo3.jpeg" class="w-full flex-shrink-0 rounded" alt="">
+        <img src="img/tykavo4.jpeg" class="w-full flex-shrink-0 rounded" alt="">
+        <img src="img/tykavo2.jpeg" class="w-full flex-shrink-0 rounded" alt="">
+      </div>
+      <button onclick="carousel(-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white p-2 rounded">❮</button>
+      <button onclick="carousel(1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white p-2 rounded">❯</button>
       </div>
     </div>
 
@@ -140,11 +141,23 @@ permalink: /tykavo/
             <textarea name="message" class="w-full bg-gray-700 text-gray-100 border border-gray-600 rounded px-3 py-2 focus:outline-none focus:border-blue-500 resize-none" rows="4"></textarea>
           </label>
 
-          <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded transition-colors">Send</button>
+          <button type="submit" class="w-full bg-blue-900 hover:bg-blue-700 text-gray-100 font-semibold py-2 rounded transition-colors">Send</button>
         </form>
       </p>
     </div>
 
   </div>
+
+    <script>
+      let currentSlide = 0;
+      const totalSlides = 3;
+
+      function carousel(n) {
+        const carousel = document.getElementById('carousel');
+        currentSlide += n;
+        currentSlide = (currentSlide + totalSlides) % totalSlides;
+        carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+      }
+    </script>
 </body>
 </html>

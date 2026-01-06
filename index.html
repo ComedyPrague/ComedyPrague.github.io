@@ -4,23 +4,68 @@ id: overview
 permalink: /index.html
 ---
 
+<!--
 <div class="logo">
-  <img src="img/comedy_prague_logo.jpg" class="img-responsive" alt="Comedy Prague Logo" />
+  <img src="img/comedy_in_prague_logo.jpg" class="img-responsive" alt="Comedy Prague Logo" />
 </div>
+-->
 
 <div class="text">
-  <p>Bringing you regular standup comedy shows in Prague since 2013!</p>
+  <h4>Regular Open Mics</h4>
 
-  <ul>
-    <li>we run several shows every week in different venues around Prague</li>
-    <li>we are made up of experienced and dedicated performers from all over the world</li>
-    <li>we run workshops to train new comedians</li>
-  </ul>
+  <table class="shows">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Where</th>
+        <th>When</th>
+        <th>How often</th>
+        <th>How much</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for show in site.data.shows %}
+        <tr class="show show--{{ show.type }}">
+          <td>
+            {% if show.url %}
+              <a href="{{ show.url }}">
+                {{ show.name }}
+              </a>
+            {% else %}
+              {{ show.name }}
+            {% endif %}
+          </td>
+          <td>
+            {% if show.venueUrl %}
+              <a href="{{ show.venueUrl }}" target="_blank">
+                {{ show.venueName }}
+              </a>
+            {% else %}
+              {{ show.venueName }}
+            {% endif %}
+            {% if show.venueAddress %}
+              <small><a href="https://mapy.com/en/zakladni?q={{ show.venueAddress }}" target="_blank">
+                <img src="img/map-icon.png" style="max-height: 1.3em;" />
+              </a></small>
+            {% endif %}
 
-  <p class="facebook-link">
-    <a href="https://www.facebook.com/comedyprague/">
-      <img src="img/facebook_icon_large.png" width="34" height="34" alt="Facebook Logo" />
-      &nbsp;Check us out on Facebook!
-    </a>
-  </p>
+          </td>
+          <td>{{ show.day }}, {{ show.time }}</td>
+          <td>{{ show.frequency }}</td>
+          <td>
+            {% if show.ticketUrl %}
+              <a href="{{ show.ticketsUrl }}" target="_blank">
+                {{ show.cost }}
+              </a>
+            {% else %}
+              {{ show.cost }}
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <!-- table or list -->
+
 </div>

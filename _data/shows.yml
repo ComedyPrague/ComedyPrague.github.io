@@ -1,6 +1,6 @@
 
 - name: "Show Up Go Up"
-  frequency: "Every Tuesday"
+  frequency: "every week"
   day: "Tuesday"
   time: "19:00"
   venueName: "MCC"
@@ -11,7 +11,7 @@
   ticketsUrl: "https://metrocomedyclub.cz/#schedule"
 
 - name: "Velvet Tuesday"
-  frequency: "Every Tuesday"
+  frequency: "every week"
   day: "Tuesday"
   time: "20:00"
   venueName: "Czech Inn Bar"
@@ -22,7 +22,7 @@
   ticketsUrl: "https://goout.net/en/velvet-tuesday-comedy-show/ezkbaic/"
 
 - name: "Fishy Tuesday"
-  frequency: "Every 1st and 3rd Tue of the month"
+  frequency: "every 1st and 3rd Tue of the month"
   day: "Tuesday"
   time: "21:00"
   venueName: "Café Bar Duende"
@@ -33,7 +33,7 @@
   ticketsUrl: "https://www.eventbrite.co.uk/e/fishy-tuesdays-comedy-night-ftcn-at-duende-bar-tickets-1020981502157"
 
 - name: "Late MCC Open Mic"
-  frequency: "Every Tuesday"
+  frequency: "every week"
   day: "Tuesday"
   time: "21:00"
   venueName: "MCC"
@@ -44,7 +44,7 @@
   ticketsUrl: "https://metrocomedyclub.cz/#schedule"
 
 - name: "Ty Kávo Open Mic"
-  frequency: "Every 1st and 3rd Wed of the month"
+  frequency: "every 1st and 3rd Wed of the month"
   day: "Wednesday"
   time: "20:00"
   venueName: "Ty Kávo"
@@ -55,7 +55,7 @@
   url: "https://comedyprague.cz/tykavo"
 
 - name: "Old Hacks, New Jokes"
-  frequency: "Every Wednesday"
+  frequency: "every week"
   day: "Wednesday"
   time: "21:00"
   venueName: "MCC"
@@ -66,7 +66,7 @@
   ticketsUrl: "https://metrocomedyclub.cz/#schedule"
 
 - name: "Kontakt Comedy Night"
-  frequency: "Every Thursday"
+  frequency: "every week"
   day: "Thursday"
   time: "22:00"
   venueName: "Kontakt Bar"

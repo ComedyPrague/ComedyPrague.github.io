@@ -47,7 +47,7 @@ permalink: /index.html
             <td class="px-4 py-3 whitespace-nowrap">{{ show.day }}, {{ show.time }}</td>
             <td class="px-4 py-3">{{ show.frequency }}</td>
             <td class="px-4 py-3 whitespace-nowrap">
-              {% if show.ticketUrl %}
+              {% if show.ticketsUrl %}
                 <a href="{{ show.ticketsUrl }}" target="_blank" class="text-red-700 hover:text-red-900 underline">
                   {{ show.cost }}
                 </a>

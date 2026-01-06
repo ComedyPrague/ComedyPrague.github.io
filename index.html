@@ -11,9 +11,9 @@ permalink: /index.html
     <table class="shows w-full border-collapse">
       <thead>
         <tr class="border-b-2 border-gray-300">
+          <th colspan="2" class="text-left px-4 py-3 whitespace-nowrap">When</th>
           <th class="text-left px-4 py-3 whitespace-nowrap"></th>
           <th class="text-left px-4 py-3 whitespace-nowrap">Where</th>
-          <th colspan="2" class="text-left px-4 py-3 whitespace-nowrap">When</th>
           <th class="text-left px-4 py-3">How often</th>
           <th class="text-left px-4 py-3 whitespace-nowrap">How much</th>
         </tr>
@@ -24,8 +24,15 @@ permalink: /index.html
           {% assign shows_for_day = site.data.shows | where: "day", day %}
           {% if shows_for_day.size > 0 %}
             {% for show in shows_for_day %}
-              <tr class="show show--{{ show.type }} border-b border-gray-200 hover:bg-gray-50">
-                <td class="px-4 py-3 whitespace-nowrap">
+              <tr class="show show--{{ show.type }} border-t border-b border-transparent group">
+                {% if forloop.first %}
+                  <td class="px-4 py-3 whitespace-nowrap text-gray-800 border-r border-gray-300 align-top bg-white" rowspan="{{ shows_for_day.size }}">
+                  {{ day }}
+                  </td>
+               {% endif %}
+                <td class="px-4 py-3 whitespace-nowrap border-t border-b border-transparent group-hover:bg-gray-100">{{ show.time }}</td>
+
+                <td class="px-4 py-3 whitespace-nowrap border-t border-b border-transparent group-hover:bg-gray-100">
                   {% if show.url %}
                     <a href="{{ show.url }}" class="text-red-700 hover:text-red-900 underline">
                       {{ show.name }}
@@ -34,7 +41,7 @@ permalink: /index.html
                     {{ show.name }}
                   {% endif %}
                 </td>
-                <td class="px-4 py-3 whitespace-nowrap">
+                <td class="px-4 py-3 whitespace-nowrap border-t border-b border-transparent group-hover:bg-gray-100">
                   {% if show.venueUrl %}
                     <a href="{{ show.venueUrl }}" target="_blank" class="text-red-700 hover:text-red-900 underline">
                       {{ show.venueName }}
@@ -48,14 +55,8 @@ permalink: /index.html
                     </a></small>
                   {% endif %}
                 </td>
-                {% if forloop.first %}
-                  <td class="px-4 py-3 whitespace-nowrap text-gray-800 border-l border-r border-gray-300 align-top" rowspan="{{ shows_for_day.size }}">
-                  {{ day }}
-                  </td>
-               {% endif %}
-                <td class="px-4 py-3 whitespace-nowrap">{{ show.time }}</td>
-                <td class="px-4 py-3">{{ show.frequency }}</td>
-                <td class="px-4 py-3 whitespace-nowrap">
+                <td class="px-4 py-3 border-t border-b border-transparent group-hover:bg-gray-100">{{ show.frequency }}</td>
+                <td class="px-4 py-3 whitespace-nowrap border-t border-b border-transparent group-hover:bg-gray-100">
                   {% if show.ticketsUrl %}
                     <a href="{{ show.ticketsUrl }}" target="_blank" class="text-red-700 hover:text-red-900 underline">
                       {{ show.cost }}

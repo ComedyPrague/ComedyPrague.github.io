@@ -1,38 +1,67 @@
-<nav class="navbar navbar-expand-md navbar-light bg-white mb-4">
-  <a class="navbar-brand" href="/"><img src="/img/comedy-in-prague-logo-small.png" class="img-responsive" alt="Comedy Prague Logo" /></a>
+<nav class="bg-white border-b border-gray-200 mb-4">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-center items-center gap-6 py-4 relative">
+      
+      <a class="flex-shrink-0" href="/">
+        <img src="/img/comedy-in-prague-logo.png" alt="Comedy Prague Logo" class="h-32" />
+      </a>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+      <div class="block text-gray-700 italic text-md text-center md:text-left">
+        Prague stand-up comedy in English, all in one place.
+      </div>
 
-  <div class="collapse navbar-collapse" id="navbarCollapse">
-
-    <ul class="navbar-nav navbar-left mr-auto">
-
-      <li><i>Prague stand-up comedy in English, all in one place.</i></li>
-
-<!--
-      <li class="nav-item {% if page.id == 'home' %} active {% endif %}">
-        <a class="nav-link" href="/old/">Home</a>
-      </li>
-      <li class="nav-item {% if page.id == 'about-us' %} active {% endif %}">
-        <a class="nav-link" href="/old/about-us.html">About us</a>
-      </li>
-      <li class="nav-item {% if page.id == 'contact-us' %} active {% endif %}">
-        <a class="nav-link" href="/old/contact-us.html">Contact Us</a>
-      </li>
--->
-    </ul>
-
-    <ul class="navbar-nav navbar-right d-none d-md-block">
-    <!--
-      <li class="nav-item">
-        <a href="https://www.facebook.com/comedyprague/">
-          <img src="/img/facebook_icon_large.png" width="34" height="34" alt="Facebook Logo" />
-        </a>
-      </li>
-    -->
-    </ul>
-
+      <!-- mobile menu button
+      <button class="md:hidden absolute right-4 inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:bg-gray-100" type="button" aria-label="Toggle navigation" id="mobileMenuToggle">
+        <svg class="block h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      -->
+    </div>
   </div>
+
+<!-- left side menu
+  <div class="hidden md:flex justify-center bg-gray-50 border-t border-gray-200">
+    <div class="max-w-7xl px-4 sm:px-6 lg:px-8 py-3">
+      <ul class="flex space-x-8">
+        <li class="text-gray-700"><i>Prague stand-up comedy in English, all in one place.</i></li>
+
+<!- obsolete, kept for reference
+        <li class="nav-item {% if page.id == 'home' %} active {% endif %}">
+          <a class="nav-link" href="/old/">Home</a>
+        </li>
+->
+      </ul>
+    </div>
+  </div>
+-->
+
+  <!-- right side menu
+  <div class="hidden md:flex justify-center bg-gray-50 border-t border-gray-200">
+    <div class="max-w-7xl px-4 sm:px-6 lg:px-8 py-3">
+
+      <!-
+       obsolete, kept for reference
+      <a href="https://www.facebook.com/comedyprague/">
+        <img src="/img/facebook_icon_large.png" width="34" height="34" alt="Facebook Logo" />
+      </a>
+    ->
+  </div>
+-->
+
+  <!-- Mobile menu
+  <div class="hidden md:hidden" id="mobileMenu">
+    <div class="px-2 pt-2 pb-3 space-y-1">
+      <div class="px-3 py-2 text-gray-700"><i>Prague stand-up comedy in English, all in one place.</i></div>
+    </div>
+  </div>
+
+  <script>
+    const toggle = document.getElementById('mobileMenuToggle');
+    const menu = document.getElementById('mobileMenu');
+    toggle.addEventListener('click', function() {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+-->
 </nav>

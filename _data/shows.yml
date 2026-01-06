@@ -22,7 +22,7 @@
   ticketsUrl: "https://goout.net/en/velvet-tuesday-comedy-show/ezkbaic/"
 
 - name: "Fishy Tuesday"
-  frequency: "Every 1st and 3rd Tuesday of the month"
+  frequency: "Every 1st and 3rd Tue of the month"
   day: "Tuesday"
   time: "21:00"
   venueName: "Café Bar Duende"
@@ -44,7 +44,7 @@
   ticketsUrl: "https://metrocomedyclub.cz/#schedule"
 
 - name: "Ty Kávo Open Mic"
-  frequency: "Every 1st and 3rd Wednesday of the month"
+  frequency: "Every 1st and 3rd Wed of the month"
   day: "Wednesday"
   time: "20:00"
   venueName: "Ty Kávo"

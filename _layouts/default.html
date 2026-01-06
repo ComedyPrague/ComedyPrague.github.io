@@ -7,16 +7,16 @@
 
   {% include navigation.html %}
 
-  <div class="container">
-    <div class="row">
-      <div class="col-12" style="height: 2em;">&nbsp;</div>
-    </div>
-    <div class="row">
-      <div class="col d-none d-md-block">&nbsp;</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="h-8">&nbsp;</div>
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+      <div class="hidden md:block md:col-span-1">&nbsp;</div>
 
-      {{ content }}
+      <div class="col-span-1 md:col-span-10">
+        {{ content }}
+      </div>
 
-      <div class="col d-none d-md-block">&nbsp;</div>
+      <div class="hidden md:block md:col-span-1">&nbsp;</div>
     </div>
   </div>
 </body>

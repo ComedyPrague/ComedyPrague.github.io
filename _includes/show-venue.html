@@ -1,0 +1,12 @@
+{% if include.show.venueUrl %}
+  <a href="{{ include.show.venueUrl }}" target="_blank" class="text-red-700 hover:text-red-900 underline">
+    {{ include.show.venueName }}
+  </a>
+{% else %}
+  {{ include.show.venueName }}
+{% endif %}
+{% if include.show.venueAddress %}
+  <a href="https://mapy.com/en/zakladni?q={{ include.show.venueAddress }}" target="_blank" class="inline-block ml-1">
+    <img src="img/map-icon.png" class="h-{{ include.iconSize | default: '5' }} inline" />
+  </a>
+{% endif %}

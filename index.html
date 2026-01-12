@@ -34,37 +34,14 @@ permalink: /index.html
                 <td class="px-4 py-3 whitespace-nowrap border-t border-b border-transparent group-hover:bg-gray-100">{{ show.time }}</td>
 
                 <td class="px-4 py-3 whitespace-nowrap border-t border-b border-transparent group-hover:bg-gray-100">
-                  {% if show.url %}
-                    <a href="{{ show.url }}" class="text-red-700 hover:text-red-900 underline">
-                      {{ show.name }}
-                    </a>
-                  {% else %}
-                    {{ show.name }}
-                  {% endif %}
+                  {% include show-name.html show=show %}
                 </td>
                 <td class="px-4 py-3 whitespace-nowrap border-t border-b border-transparent group-hover:bg-gray-100">
-                  {% if show.venueUrl %}
-                    <a href="{{ show.venueUrl }}" target="_blank" class="text-red-700 hover:text-red-900 underline">
-                      {{ show.venueName }}
-                    </a>
-                  {% else %}
-                    {{ show.venueName }}
-                  {% endif %}
-                  {% if show.venueAddress %}
-                    <small><a href="https://mapy.com/en/zakladni?q={{ show.venueAddress }}" target="_blank" class="inline-block ml-2">
-                      <img src="img/map-icon.png" class="h-5 inline" />
-                    </a></small>
-                  {% endif %}
+                  {% include show-venue.html show=show iconSize="5" %}
                 </td>
                 <td class="px-4 py-3 border-t border-b border-transparent group-hover:bg-gray-100">{{ show.frequency }}</td>
                 <td class="px-4 py-3 whitespace-nowrap border-t border-b border-transparent group-hover:bg-gray-100">
-                  {% if show.ticketsUrl %}
-                    <a href="{{ show.ticketsUrl }}" target="_blank" class="text-red-700 hover:text-red-900 underline">
-                      {{ show.cost }}
-                    </a>
-                  {% else %}
-                    {{ show.cost }}
-                  {% endif %}
+                  {% include show-cost.html show=show %}
                 </td>
               </tr>
             {% endfor %}
@@ -89,36 +66,13 @@ permalink: /index.html
             <!-- Line 2 -->
             <div class="flex flex-wrap items-baseline gap-x-3 text-sm text-gray-700">
               <span class="text-base font-semibold">
-                {% if show.url %}
-                  <a href="{{ show.url }}" class="text-red-700 hover:text-red-900 underline">
-                    {{ show.name }}
-                  </a>
-                {% else %}
-                  {{ show.name }}
-                {% endif %}
+                {% include show-name.html show=show %}
               </span>
               <span class="text-sm">
-                {% if show.venueUrl %}
-                  <a href="{{ show.venueUrl }}" target="_blank" class="text-red-700 hover:text-red-900 underline">
-                    {{ show.venueName }}
-                  </a>
-                {% else %}
-                  {{ show.venueName }}
-                {% endif %}
-                {% if show.venueAddress %}
-                  <a href="https://mapy.com/en/zakladni?q={{ show.venueAddress }}" target="_blank" class="inline-block ml-1">
-                    <img src="img/map-icon.png" class="h-4 inline" />
-                  </a>
-                {% endif %}
+                {% include show-venue.html show=show iconSize="4" %}
               </span>
               <span class="font-medium">
-                {% if show.ticketsUrl %}
-                  <a href="{{ show.ticketsUrl }}" target="_blank" class="text-red-700 hover:text-red-900 underline">
-                    {{ show.cost }}
-                  </a>
-                {% else %}
-                  {{ show.cost }}
-                {% endif %}
+                {% include show-cost.html show=show %}
               </span>
             </div>
           </div>

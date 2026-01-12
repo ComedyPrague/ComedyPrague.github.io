@@ -51,29 +51,6 @@ a:visited {
   font-weight: bold;
 }
 
-.venues hr {
-  border: 0.5px solid #EEE;
-  width: 90%;
-  margin: 1.5em;
-}
-
-#venues-intro {
-  font-style: italic;
-  line-height: 1.8em;
-}
-
-#venues-intro > .item {
-  font-size: larger;
-}
-
-.venue > .name {
-  margin-top: 1em;
-}
-
-.venue .location {
-  text-align: right;
-}
-
 .shows {
   font-style: italic;
   line-height: 1.8em;

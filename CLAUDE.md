@@ -4,14 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Comedy Prague is a Jekyll-based static website listing English stand-up comedy shows in Prague. It is hosted on GitHub Pages:
-https://comedyprague.cz
+Comedy Prague is a Jekyll-based static website listing English stand-up comedy shows in Prague. It is hosted on GitHub Pages: https://comedyprague.cz
 
 ### Standalone Pages
 
-Invividual comedy shows can have their own standalone pages
-indepependent on the main page (TODO except optional header strip
-on the top, if specific layout is used)
+Invividual comedy shows can have their own standalone pages indepependent on the main page.
 
 For example, the `/tykavo/` directory contains a standalone page (`layout: null`) with its own complete HTML, Tailwind config, and JavaScript. It has its own images in `tykavo/img/`.
 

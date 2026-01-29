@@ -51,32 +51,44 @@ permalink: /index.html
     </table>
   </div>
 
-  <!-- Mobile card view (hidden on desktop) -->
-  <div class="block md:hidden w-full">
+  <!-- Mobile expanded view (hidden on desktop) -->
+  <div class="block md:hidden w-full space-y-4">
     {% assign days = "Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday" | split: "|" %}
     {% for day in days %}
       {% assign shows_for_day = site.data.shows | where: "day", day %}
       {% if shows_for_day.size > 0 %}
-        {% for show in shows_for_day %}
-          <div class="show show--{{ show.type }} border-b border-gray-300 py-3 px-2">
-            <!-- Line 1 -->
-            <div class="flex flex-wrap items-baseline gap-x-2 gap-y-1 mb-1">
-                <span class="text-base text-gray-500 font-medium">{{ day }} {{ show.time }} <span class="whitespace-nowrap">({{ show.frequency }})</span></span>
-            </div>
-            <!-- Line 2 -->
-            <div class="flex flex-wrap items-baseline gap-x-3 text-sm text-gray-700">
-              <span class="text-base font-semibold">
-                {% include show-name.html show=show %}
-              </span>
-              <span class="text-sm">
-                {% include show-venue.html show=show iconSize="4" %}
-              </span>
-              <span class="font-medium">
-                {% include show-cost.html show=show %}
-              </span>
-            </div>
+        <div class="border-2 border-gray-300 rounded-lg p-3">
+          <!-- Day header -->
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="text-lg font-bold text-gray-800">{{ day }}</h3>
+            <span class="text-sm font-semibold text-gray-600">{{ shows_for_day.size }} show{% if shows_for_day.size > 1 %}s{% endif %}</span>
           </div>
-        {% endfor %}
+
+          <!-- Shows list - always visible on mobile -->
+          <div class="space-y-3">
+            {% for show in shows_for_day %}
+              <div class="show show--{{ show.type }} border-t border-gray-300 pt-3 first:border-t-0 first:pt-0">
+                <!-- Time and name -->
+                <div class="mb-1">
+                  <span class="text-sm text-gray-600 font-medium">{{ show.time }}</span>
+                  <span class="text-base font-semibold ml-2">
+                    {% include show-name.html show=show %}
+                  </span>
+                </div>
+                <!-- Venue, frequency, cost -->
+                <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1 text-sm text-gray-700">
+                  <span>
+                    {% include show-venue.html show=show iconSize="4" %}
+                  </span>
+                  <span class="text-gray-600">({{ show.frequency }})</span>
+                  <span class="font-medium">
+                    {% include show-cost.html show=show %}
+                  </span>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
       {% endif %}
     {% endfor %}
   </div>

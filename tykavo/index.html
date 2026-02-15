@@ -88,18 +88,18 @@ permalink: /tykavo/
       <p class="text-gray-300 text-base font-medium mb-3">
       Every 1st and 3rd Wednesday from 8pm
       </p>
-      <ul class="list-disc ml-5 space-y-2 text-base text-gray-300">
-        <li>Wed Feb 4 — 8pm (
-          <a target="_blank" href="https://www.facebook.com/events/901164379085376"><img src="../img/facebook-icon.png" alt="Facebook" class="w-4 h-4 inline mr-1"></a>, 
+      <ul class="list-disc ml-5 space-y-2 text-base text-gray-300" id="events-list">
+        <li data-date="2026-02-04">Wed Feb 4 — 8pm (
+          <a target="_blank" href="https://www.facebook.com/events/901164379085376"><img src="../img/facebook-icon.png" alt="Facebook" class="w-4 h-4 inline mr-1"></a>,
           <a target="_blank" href="https://www.meetup.com/prague-english-comedy-meetup/events/313056708/"><img src="../img/meetup-icon.png" alt="Meetup" class="w-4 h-4 inline mr-1"></a>)
         </li>
-        <li>Wed Feb 18 — 8pm (
-          <a target="_blank" href="https://www.facebook.com/events/1421127639596474"><img src="../img/facebook-icon.png" alt="Facebook" class="w-4 h-4 inline mr-1"></a>, 
+        <li data-date="2026-02-18">Wed Feb 18 — 8pm (
+          <a target="_blank" href="https://www.facebook.com/events/1421127639596474"><img src="../img/facebook-icon.png" alt="Facebook" class="w-4 h-4 inline mr-1"></a>,
           <a target="_blank" href="https://www.meetup.com/prague-english-comedy-meetup/events/313056734/"><img src="../img/meetup-icon.png" alt="Meetup" class="w-4 h-4 inline mr-1"></a>)
         </li>
 
-        <li>Wed Mar 4 — 8pm</li>
-        <li>Wed Mar 18 — 8pm</li>
+        <li data-date="2026-03-04">Wed Mar 4 — 8pm</li>
+        <li data-date="2026-03-18">Wed Mar 18 — 8pm</li>
       </ul>
     </div>
 
@@ -169,13 +169,28 @@ permalink: /tykavo/
     <script>
       let currentSlide = 0;
       const totalSlides = 3;
-      
+
       function carousel(n) {
         const carousel = document.getElementById('carousel');
         currentSlide += n;
         currentSlide = (currentSlide + totalSlides) % totalSlides;
         carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
       }
+
+      // Filter past events
+      document.addEventListener('DOMContentLoaded', function() {
+        const eventsList = document.getElementById('events-list');
+        const events = eventsList.querySelectorAll('li[data-date]');
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+
+        events.forEach(event => {
+          const eventDate = new Date(event.getAttribute('data-date'));
+          if (eventDate < today) {
+            event.style.display = 'none';
+          }
+        });
+      });
     </script>
 </body>
 </html>

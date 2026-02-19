@@ -17,9 +17,8 @@
   venueName: "Czech Inn Bar"
   venueAddress: "Francouzská 240/76, Praha 10"
   venueUrl: "https://czechinn.com/bar/"
-  type: "showcase"
-  cost: "200 CZK"
-  ticketsUrl: "https://goout.net/en/velvet-tuesday-comedy-show/ezkbaic/"
+  type: "open mic"
+  cost: "free"
 
 - name: "Fishy Tuesday"
   frequency: "every 1st and 3rd Tue of the month"
@@ -75,7 +74,3 @@
   type: "open mic"
   cost: "99 CZK"
   ticketsUrl: "https://www.getyourguide.com/kontakt-bar-l227570/"
-
-# Friday: Comedy Cellar at London Underground?
-
-# Saturday: Late Night Open Mic at De Facto?

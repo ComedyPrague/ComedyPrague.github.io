@@ -1,7 +1,7 @@
 {% if include.show.url %}
-  <a href="{{ include.show.url }}" class="text-red-700 hover:text-red-900 underline">
+  <a href="{{ include.show.url }}" class="{% if include.show.on_break %}text-gray-400 hover:text-gray-600 line-through{% else %}text-red-700 hover:text-red-900{% endif %} underline">
     {{ include.show.name }}
   </a>
 {% else %}
-  {{ include.show.name }}
+  <span class="{% if include.show.on_break %}text-gray-400 line-through{% endif %}">{{ include.show.name }}</span>
 {% endif %}

@@ -92,12 +92,12 @@ permalink: /tykavo/
     <div class="bg-gray-800 shadow-lg rounded-lg p-4 hover:shadow-xl transition-shadow">
       <h2 class="font-semibold text-xl mb-4 text-white">When</h2>
       <p class="text-gray-300 text-base font-medium mb-3">
-      Every 1st and 3rd Wednesday from 8pm
+      <strike>Every 1st and 3rd Wednesday from 8pm</strike>
+      </p>
+      <p class="text-gray-300 text-base font-medium mb-3">
+      SUMMER BREAK JULY-AUGUST 😎
       </p>
       <ul class="list-disc ml-5 space-y-2 text-base text-gray-300" id="events-list">
-
-        <li data-date="2026-05-20"><strike>Wed May 20 — 8pm</strike> — CANCELLED</li>
-
         {% for event in site.data.tykavo_events %}
         <li data-date="{{ event.date }}">{{ event.date | date: "%a %b %-d" }} — 8pm (
           <a target="_blank" href="{{ event.facebook_link }}"><img src="../img/facebook-icon.png" alt="Facebook" class="w-4 h-4 inline mr-1"></a>,

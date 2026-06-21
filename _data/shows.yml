@@ -52,6 +52,8 @@
   type: "open mic"
   cost: "free"
   url: "https://comedyprague.cz/tykavo"
+  on_break: true
+  break_notice: "SUMMER BREAK JULY-AUGUST"
 
 - name: "Old Hacks, New Jokes"
   frequency: "every week"

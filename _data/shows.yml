@@ -52,7 +52,6 @@
   type: "open mic"
   cost: "free"
   url: "https://comedyprague.cz/tykavo"
-  on_break: true
 
 - name: "Old Hacks, New Jokes"
   frequency: "every week"

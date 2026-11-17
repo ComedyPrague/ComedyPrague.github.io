@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 # default theme for new Jekyll sites
 gem "minima", "~> 2.5"

@@ -42,17 +42,6 @@
   cost: "150 CZK"
   ticketsUrl: "https://metrocomedyclub.cz/#schedule"
 
-- name: "Ty Kávo Open Mic"
-  frequency: "every 1st and 3rd Wed of the month"
-  day: "Wednesday"
-  time: "20:00"
-  venueName: "Ty Kávo"
-  venueAddress: "Jindřicha Plachty 28, Praha 5 - Anděl"
-  venueUrl: "https://www.tykavo.cz/kavarnatykavo/"
-  type: "open mic"
-  cost: "free"
-  url: "https://comedyprague.cz/tykavo"
-
 - name: "Old Hacks, New Jokes"
   frequency: "every week"
   day: "Wednesday"
